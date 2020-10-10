@@ -1,4 +1,4 @@
-const DB = require('../../common/inMemoryDb');
+const DB = require('../../common/usersMemoryDb');
 
 const getAll = async () => DB.getAllUsers();
 

@@ -27,8 +27,6 @@ router.route('/').post(async (req, res) => {
 });
 
 router.route('/:id').put(async (req, res) => {
-  const fsdfsdf = await req.body;
-  console.log(fsdfsdf);
   const user = await new User({
     login: req.body.login,
     password: req.body.password,
@@ -41,7 +39,7 @@ router.route('/:id').put(async (req, res) => {
 router.route('/:id').delete(async (req, res) => {
   await usersService.remove(req.params.id);
   // map user fields to exclude secret fields like "password"
-  res.sendStatus(200);
+  res.sendStatus(204);
 });
 
 module.exports = router;

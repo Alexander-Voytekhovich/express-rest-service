@@ -1,10 +1,16 @@
 const uuid = require('uuid');
 
 class Board {
-  constructor({ id = uuid(), title = 'example', columns = 'example' } = {}) {
+  constructor({ id = uuid(), title = 'example', columns = [] } = {}) {
     this.id = id;
     this.title = title;
-    this.columns = columns;
+    if (columns.length > 0) {
+      this.columns = columns.map(column => {
+        return { id: uuid(), ...column };
+      });
+    } else {
+      this.columns = [];
+    }
   }
 
   static toResponse(board) {
