@@ -1,5 +1,5 @@
-const getAllBoards = async () => {
+const getAll = async () => {
   return [];
 };
 
-module.exports = { getAllBoards };
+module.exports = { getAll };
