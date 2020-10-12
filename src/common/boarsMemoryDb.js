@@ -16,11 +16,7 @@ const createBoard = async board => {
 
 const removeBoard = async id => {
   DB = DB.filter(el => el.id !== id);
-  console.log(taskData.DB);
   taskData.DB = taskData.DB.filter(el => el.boardId !== id);
-  console.log(id);
-  console.log(taskData.DB);
-
   return DB.filter(el => el.id === id)[0];
 };
 
