@@ -1,27 +1,29 @@
-const DB = require('../../common/usersMemoryDb');
+const usersData = [];
 
-const getAll = async () => DB.getAllUsers();
+const getAll = async () => usersData;
 
-const get = async id => {
-  const user = DB.getUser(id);
+const get = async id => usersData.filter(el => el.id === id)[0];
 
-  if (!user) {
-    throw new Error(`The user with id "${id}" was not found`);
-  }
-
+const create = async user => {
+  usersData.push(user);
   return user;
 };
 
-const create = async user => {
-  return DB.createUser(user);
+const update = async (id, user) => {
+  usersData.forEach((el, index) => {
+    if (el.id === id) {
+      usersData[index].name = user.name;
+      usersData[index].login = user.login;
+      usersData[index].password = user.password;
+    }
+  });
+  return get(id);
 };
 
 const remove = async id => {
-  return DB.removeUser(id);
-};
-
-const update = async (id, user) => {
-  return DB.updateUser(id, user);
+  const user = usersData.findIndex(el => el.id === id);
+  usersData.splice(user, 1);
+  return 'user deleted';
 };
 
 module.exports = { getAll, get, create, remove, update };
