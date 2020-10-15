@@ -50,7 +50,6 @@ router.route('/:boardId/tasks/:id').put(async (req, res) => {
 router.route('/:boardId/tasks/:id').delete(async (req, res) => {
   const { boardId, id } = await req.params;
   await tasksService.remove(boardId, id);
-  // map user fields to exclude secret fields like "password"
   res.sendStatus(204);
 });
 

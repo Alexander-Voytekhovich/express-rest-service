@@ -8,6 +8,8 @@ const create = task => tasksRepo.create(task);
 
 const remove = (boardId, id) => tasksRepo.remove(boardId, id);
 
+const removeBoardTasks = boardId => tasksRepo.removeAll(boardId);
+
 const update = (boardId, id, task) => tasksRepo.update(boardId, id, task);
 
-module.exports = { getAll, get, create, remove, update };
+module.exports = { getAll, get, create, remove, removeBoardTasks, update };

@@ -22,7 +22,6 @@ router.route('/').post(async (req, res) => {
 
 router.route('/:id').get(async (req, res) => {
   const board = await boardsService.get(req.params.id);
-  // map user fields to exclude secret fields like "password"
   if (board) {
     return res.status(200).send(board);
   }
