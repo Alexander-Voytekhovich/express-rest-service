@@ -5,12 +5,18 @@ const usersService = require('./user.service');
 
 router.route('/').get(async (req, res) => {
   const users = await usersService.getAll();
-  res.json(users.map(User.toResponse));
+  if (users) {
+    return res.status(200).send(users);
+  }
+  return res.status(404).send('Not found');
 });
 
 router.route('/:id').get(async (req, res) => {
   const user = await usersService.get(req.params.id);
-  res.json(User.toResponse(user));
+  if (user) {
+    return res.status(200).send(user);
+  }
+  return res.status(404).send('The user not found!');
 });
 
 router.route('/').post(async (req, res) => {
@@ -31,12 +37,18 @@ router.route('/:id').put(async (req, res) => {
     name: req.body.name
   });
   await userService.update(req.params.id, User.toResponse(user));
-  res.json(User.toResponse(user));
+  if (user) {
+    return res.status(200).send(user);
+  }
+  return res.status(404).send('Not found');
 });
 
 router.route('/:id').delete(async (req, res) => {
-  await usersService.remove(req.params.id);
-  res.sendStatus(200);
+  const removeStatus = await usersService.remove(req.params.id);
+  if (removeStatus) {
+    return res.status(200).send(removeStatus);
+  }
+  return res.status(404).send('Not found');
 });
 
 module.exports = router;
