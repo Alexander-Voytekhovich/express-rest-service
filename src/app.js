@@ -2,11 +2,17 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
+
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
+
 const httpLogger = require('./middleware/middleware.http-logger');
-const errorLogger = require('./middleware/middleware.http-logger');
+const errorLogger = require('./middleware/middleware.error-logger');
+
+const { logger, createUnhandledEventLog } = require('./common/logger');
+
+const endProcess = process.exit;
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -24,32 +30,29 @@ app.use('/', (req, res, next) => {
 });
 
 app.use(httpLogger);
-app.use(errorLogger);
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 
-app.use((req, res, next) => {
-  console.log(14);
-  const error = new Error('Not found');
-  error.status = 404;
-  next(error);
+process.on('unhandledRejection', error => {
+  logger.error(createUnhandledEventLog(error));
+  endProcess(1);
 });
 
-// eslint-disable-next-line no-unused-vars
-app.use((error, req, res, next) => {
-  console.log(15);
-  res.status(error.status || 500);
-  res.json({
-    error: {
-      message: error.message
-    }
-  });
+process.on('uncaughtException', error => {
+  logger.error(createUnhandledEventLog(error));
+  endProcess(1);
 });
+
+app.use(errorLogger);
 
 /* setTimeout(() => {
-  throw Error('13');
+  throw Error('Oops!');
 }, 2000); */
+
+/* setTimeout(() => {
+  Promise.reject(Error('Oops!'));
+}, 5000); */
 
 module.exports = app;

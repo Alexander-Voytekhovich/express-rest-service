@@ -1,4 +1,5 @@
 const { createLogger, format, transports } = require('winston');
+const { PORT } = require('../common/config');
 const path = require('path');
 
 const options = {
@@ -55,12 +56,28 @@ function objectToString(obj) {
   return JSON.stringify(obj);
 }
 
-function createLog(method, url, query, body) {
-  return `${formatDate()} // method - ${method} // url - ${url} // query - ${objectToString(
+function createStatisticLog(method, url, query, body) {
+  return `${formatDate()} // method - ${method} // url - http://localhost:${PORT}${url} // query - ${objectToString(
     query
   )} // body - ${objectToString(body)}`;
 }
 
+function createErrorLog(status, message, method, url, query, body) {
+  return `${formatDate()} // status - ${status} // message - ${message}  // url - http://localhost:${PORT}${url} // query - ${objectToString(
+    query
+  )} // body - ${objectToString(body)}`;
+}
+
+function createUnhandledEventLog(error) {
+  const { message } = error;
+  return `${formatDate()} // The error was caught in "unhandledRejection" or "uncaughtException" // message - ${message}`;
+}
+
 const logger = createLogger(options);
 
-module.exports = { logger, createLog };
+module.exports = {
+  logger,
+  createStatisticLog,
+  createErrorLog,
+  createUnhandledEventLog
+};

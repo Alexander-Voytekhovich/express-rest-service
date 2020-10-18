@@ -1,11 +1,16 @@
-const { logger } = require('../common/logger');
+const { logger, createErrorLog } = require('../common/logger');
 
 function errorLogger(error, req, res, next) {
-  console.log(14);
-  logger.error(error);
-  res.status(500).json({
-    error: 'Internal Server Error'
-  });
+  const { message, status } = error;
+  const { method, url, query, body } = req;
+
+  if (error.status === 404) {
+    logger.error(createErrorLog(status, message, method, url, query, body));
+    res.status(404).send('Not found');
+  } else {
+    res.status(500).send('Internal server error');
+    logger.error(createErrorLog(status, message, method, url, query, body));
+  }
   next();
 }
 
