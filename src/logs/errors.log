@@ -1,7 +1,0 @@
-error: 01-10-2020 20:48:41 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/0efc1a39-d712-4078-ae23-caf046a58a5c/tasks/9f2c8568-44e9-4780-bdc8-1321fbf6d2da // query - {} // body - {}
-error: 01-10-2020 20:48:41 // status - 404 // message - Board not found  // url - http://localhost:4000/boards/0a7697e1-3a06-4e24-b0e3-0ba0640f9b12 // query - {} // body - {}
-error: 01-10-2020 20:48:42 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/b9cce82d-3ccc-4f6c-88b6-75092c90250c/tasks/3ff5eb0d-2f47-424d-a717-93c229f752c2 // query - {} // body - {}
-error: 01-10-2020 20:48:42 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/b9cce82d-3ccc-4f6c-88b6-75092c90250c/tasks/d3587342-f2a3-4df5-82b0-098d02a1470d // query - {} // body - {}
-error: 01-10-2020 20:48:42 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/b9cce82d-3ccc-4f6c-88b6-75092c90250c/tasks/dd75dcbc-ce6a-49cd-97b0-9cfc873322f4 // query - {} // body - {}
-error: 01-10-2020 20:48:42 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/b9cce82d-3ccc-4f6c-88b6-75092c90250c/tasks/729fc65a-1883-4865-a993-1826b4ff3c2b // query - {} // body - {}
-error: 01-10-2020 20:48:42 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/b9cce82d-3ccc-4f6c-88b6-75092c90250c/tasks/b5c8ebdd-2aae-452a-a8da-25475a368540 // query - {} // body - {}
