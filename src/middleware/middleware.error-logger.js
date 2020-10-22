@@ -9,7 +9,7 @@ function errorLogger(error, req, res, next) {
     res.status(404).send('Not found');
   } else {
     res.status(500).send('Internal server error');
-    logger.error(createErrorLog(status, message, method, url, query, body));
+    logger.error(createErrorLog(error, message, method, url, query, body));
   }
   next();
 }
