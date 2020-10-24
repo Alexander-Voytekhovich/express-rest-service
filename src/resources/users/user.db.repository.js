@@ -15,8 +15,6 @@ const get = async id => {
 
 const create = async user => {
   return User.create(user);
-  /*   usersData.push(user);
-  return user; */
 };
 
 const update = async (id, user) => {

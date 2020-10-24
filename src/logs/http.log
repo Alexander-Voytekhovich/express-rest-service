@@ -1533,3 +1533,505 @@ http: 05-10-2020 22:52:41 // method - GET // url - http://localhost:4000/boards/
 http: 05-10-2020 22:52:41 // method - DELETE // url - http://localhost:4000/boards/698a55cd-1582-4dda-8e90-0d8341ead375/tasks/5a81832f-5023-41ba-98cf-667f241396c4 // query - {} // body - {}
 http: 05-10-2020 22:52:41 // method - DELETE // url - http://localhost:4000/boards/698a55cd-1582-4dda-8e90-0d8341ead375/tasks/dbe32bc0-ca8d-4ac1-aa12-70ee0ff35ac5 // query - {} // body - {}
 http: 05-10-2020 22:52:41 // method - DELETE // url - http://localhost:4000/boards/698a55cd-1582-4dda-8e90-0d8341ead375 // query - {} // body - {}
+http: 06-10-2020 10:07:38 // method - GET // url - http://localhost:4000/users // query - {} // body - {}
+http: 06-10-2020 10:07:38 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:07:38 // method - GET // url - http://localhost:4000/users/5f92813a7b6cea20d38f49b2 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - DELETE // url - http://localhost:4000/users/5f92813a7b6cea20d38f49b2 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:07:39 // method - DELETE // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b3 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:07:39 // method - PUT // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b4 // query - {} // body - {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5f92813b7b6cea20d38f49b4"}
+http: 06-10-2020 10:07:39 // method - GET // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b4 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - DELETE // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b4 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:07:39 // method - DELETE // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b6 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/boards/52c0cc5b-4946-4b68-bdd8-630a66fe6627/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5f92813b7b6cea20d38f49b7","boardId":"52c0cc5b-4946-4b68-bdd8-630a66fe6627"}
+http: 06-10-2020 10:07:39 // method - POST // url - http://localhost:4000/boards/52c0cc5b-4946-4b68-bdd8-630a66fe6627/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5f92813b7b6cea20d38f49b7","boardId":"52c0cc5b-4946-4b68-bdd8-630a66fe6627"}
+http: 06-10-2020 10:07:39 // method - DELETE // url - http://localhost:4000/users/5f92813b7b6cea20d38f49b7 // query - {} // body - {}
+http: 06-10-2020 10:07:39 // method - GET // url - http://localhost:4000/boards/52c0cc5b-4946-4b68-bdd8-630a66fe6627/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:07:39 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/52c0cc5b-4946-4b68-bdd8-630a66fe6627/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:07:51 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:07:51 // method - POST // url - http://localhost:4000/boards/e7e16ed5-b7ff-408f-994f-577ab74a2a4b/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:07:51 // method - GET // url - http://localhost:4000/boards/e7e16ed5-b7ff-408f-994f-577ab74a2a4b/tasks // query - {} // body - {}
+http: 06-10-2020 10:09:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:09:20 // method - POST // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:09:20 // method - GET // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks // query - {} // body - {}
+error: 06-10-2020 10:09:20 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d" at path "_id" for model "Task"
+http: 06-10-2020 10:09:25 // method - GET // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks // query - {} // body - {}
+error: 06-10-2020 10:09:25 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d" at path "_id" for model "Task"
+http: 06-10-2020 10:09:30 // method - POST // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:09:30 // method - POST // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:09:30 // method - PUT // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks/undefined // query - {} // body - {"_id":"5f9281aae3b76d222bdfb06d","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d","columnId":null}
+error: 06-10-2020 10:09:30 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"
+http: 06-10-2020 10:09:35 // method - GET // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:09:35 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:09:35 // method - DELETE // url - http://localhost:4000/boards/fcfca6ee-3f0d-40f9-bf83-8dd8b86e3e8d // query - {} // body - {}
+http: 06-10-2020 10:23:19 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:23:19 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:23:19 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:23:20 // method - GET // url - http://localhost:4000/boards/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:20 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Board" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"  // url - http://localhost:4000/boards/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:23:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:23:20 // method - PUT // url - http://localhost:4000/boards/undefined // query - {} // body - {"default":[],"_id":"5f9284e823dd8a2a03cdfd9c","title":"Autotest updated board","columns":[{"_id":"5f9284e823dd8a2a03cdfd9d","title":"Backlog","order":1},{"_id":"5f9284e823dd8a2a03cdfd9e","title":"Sprint","order":2}]}
+error: 06-10-2020 10:23:20 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+http: 06-10-2020 10:23:25 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:23:25 // method - DELETE // url - http://localhost:4000/boards/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:25 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards/undefined/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":null,"columnId":null}
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards/undefined/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":null,"columnId":null}
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards/undefined/tasks // query - {} // body - {"title":"Task #3","order":3,"description":"Lorem ipsum","userId":null,"columnId":null}
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards/undefined/tasks // query - {} // body - {"title":"Task #4","order":4,"description":"Lorem ipsum","userId":null,"columnId":null}
+http: 06-10-2020 10:23:30 // method - POST // url - http://localhost:4000/boards/undefined/tasks // query - {} // body - {"title":"Task #5","order":5,"description":"Lorem ipsum","userId":null,"columnId":null}
+http: 06-10-2020 10:23:30 // method - GET // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:30 // method - GET // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:30 // method - GET // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:30 // method - GET // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:30 // method - GET // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:23:30 // method - DELETE // url - http://localhost:4000/boards/undefined // query - {} // body - {}
+error: 06-10-2020 10:23:30 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+http: 06-10-2020 10:31:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:20 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - GET // url - http://localhost:4000/boards/5f9286b2c79cd52d9c3c4e14 // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:20 // method - DELETE // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e1b // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:20 // method - PUT // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e1e // query - {} // body - {"id":"5f9286c8c79cd52d9c3c4e1e","title":"Autotest updated board","columns":[{"_id":"5f9286c8c79cd52d9c3c4e1f","title":"Backlog","order":1},{"_id":"5f9286c8c79cd52d9c3c4e20","title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:20 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e1e // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - DELETE // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e1e // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:20 // method - DELETE // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e26 // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e26 // query - {} // body - {}
+error: 06-10-2020 10:31:20 // status - 404 // message - Board not found  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e26 // query - {} // body - {}
+http: 06-10-2020 10:31:20 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:31:21 // method - POST // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5f9286c8c79cd52d9c3c4e29","userId":null,"columnId":null}
+http: 06-10-2020 10:31:21 // method - POST // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5f9286c8c79cd52d9c3c4e29","userId":null,"columnId":null}
+http: 06-10-2020 10:31:21 // method - POST // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks // query - {} // body - {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5f9286c8c79cd52d9c3c4e29","userId":null,"columnId":null}
+http: 06-10-2020 10:31:21 // method - POST // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks // query - {} // body - {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5f9286c8c79cd52d9c3c4e29","userId":null,"columnId":null}
+http: 06-10-2020 10:31:21 // method - POST // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks // query - {} // body - {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5f9286c8c79cd52d9c3c4e29","userId":null,"columnId":null}
+http: 06-10-2020 10:31:21 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:31:21 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:31:21 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:31:21 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:31:21 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:31:21 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:31:21 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:31:21 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:31:21 // method - GET // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+error: 06-10-2020 10:31:21 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e29/tasks/undefined // query - {} // body - {}
+http: 06-10-2020 10:31:21 // method - DELETE // url - http://localhost:4000/boards/5f9286c8c79cd52d9c3c4e18 // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - GET // url - http://localhost:4000/users // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:35:34 // method - GET // url - http://localhost:4000/users/5f9287c69c822230c92f5edb // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - DELETE // url - http://localhost:4000/users/5f9287c69c822230c92f5edb // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:35:34 // method - DELETE // url - http://localhost:4000/users/5f9287c69c822230c92f5edc // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:35:34 // method - PUT // url - http://localhost:4000/users/5f9287c69c822230c92f5edd // query - {} // body - {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5f9287c69c822230c92f5edd"}
+http: 06-10-2020 10:35:34 // method - GET // url - http://localhost:4000/users/5f9287c69c822230c92f5edd // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - DELETE // url - http://localhost:4000/users/5f9287c69c822230c92f5edd // query - {} // body - {}
+http: 06-10-2020 10:35:34 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:35:34 // method - DELETE // url - http://localhost:4000/users/5f9287c69c822230c92f5edf // query - {} // body - {}
+http: 06-10-2020 10:35:35 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:35:35 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:35 // method - POST // url - http://localhost:4000/boards/5f9287c79c822230c92f5ee1/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5f9287c79c822230c92f5ee0","boardId":"5f9287c79c822230c92f5ee1"}
+http: 06-10-2020 10:35:35 // method - POST // url - http://localhost:4000/boards/5f9287c79c822230c92f5ee1/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5f9287c79c822230c92f5ee0","boardId":"5f9287c79c822230c92f5ee1"}
+http: 06-10-2020 10:35:35 // method - DELETE // url - http://localhost:4000/users/5f9287c79c822230c92f5ee0 // query - {} // body - {}
+http: 06-10-2020 10:35:35 // method - GET // url - http://localhost:4000/boards/5f9287c79c822230c92f5ee1/tasks/5f9287c79c822230c92f5ee4 // query - {} // body - {}
+http: 06-10-2020 10:35:51 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:51 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:35:51 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:35:51 // method - GET // url - http://localhost:4000/boards/5f9287b29c822230c92f5ed7 // query - {} // body - {}
+http: 06-10-2020 10:35:51 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:51 // method - DELETE // url - http://localhost:4000/boards/5f9287d79c822230c92f5ee9 // query - {} // body - {}
+http: 06-10-2020 10:35:51 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:51 // method - PUT // url - http://localhost:4000/boards/5f9287d79c822230c92f5eec // query - {} // body - {"id":"5f9287d79c822230c92f5eec","title":"Autotest updated board","columns":[{"_id":"5f9287d79c822230c92f5eed","title":"Backlog","order":1},{"_id":"5f9287d79c822230c92f5eee","title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d79c822230c92f5eec // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - DELETE // url - http://localhost:4000/boards/5f9287d79c822230c92f5eec // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:52 // method - DELETE // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef4 // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef4 // query - {} // body - {}
+error: 06-10-2020 10:35:52 // status - 404 // message - Board not found  // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef4 // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5f9287d89c822230c92f5ef7","userId":null,"columnId":null}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5f9287d89c822230c92f5ef7","userId":null,"columnId":null}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks // query - {} // body - {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5f9287d89c822230c92f5ef7","userId":null,"columnId":null}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks // query - {} // body - {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5f9287d89c822230c92f5ef7","userId":null,"columnId":null}
+http: 06-10-2020 10:35:52 // method - POST // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks // query - {} // body - {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5f9287d89c822230c92f5ef7","userId":null,"columnId":null}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efa // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efb // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efc // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efd // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efe // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - DELETE // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7 // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efa // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efb // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efc // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efd // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - GET // url - http://localhost:4000/boards/5f9287d89c822230c92f5ef7/tasks/5f9287d89c822230c92f5efe // query - {} // body - {}
+http: 06-10-2020 10:35:52 // method - DELETE // url - http://localhost:4000/boards/5f9287d79c822230c92f5ee6 // query - {} // body - {}
+http: 06-10-2020 10:35:58 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:35:58 // method - POST // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:35:58 // method - GET // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks // query - {} // body - {}
+http: 06-10-2020 10:35:58 // method - GET // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks // query - {} // body - {}
+http: 06-10-2020 10:35:58 // method - POST // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:35:58 // method - POST // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:35:58 // method - PUT // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks/5f9287de9c822230c92f5f04 // query - {} // body - {"id":"5f9287de9c822230c92f5f04","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f9287de9c822230c92f5eff","columnId":null}
+error: 06-10-2020 10:35:58 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 06-10-2020 10:36:03 // method - GET // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks/5f9287de9c822230c92f5f02 // query - {} // body - {}
+http: 06-10-2020 10:36:03 // method - DELETE // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks/5f9287de9c822230c92f5f02 // query - {} // body - {}
+http: 06-10-2020 10:36:03 // method - GET // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks/5f9287de9c822230c92f5f02 // query - {} // body - {}
+error: 06-10-2020 10:36:03 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff/tasks/5f9287de9c822230c92f5f02 // query - {} // body - {}
+http: 06-10-2020 10:36:03 // method - DELETE // url - http://localhost:4000/boards/5f9287de9c822230c92f5eff // query - {} // body - {}
+http: 06-10-2020 10:36:32 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:36:33 // method - POST // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:36:33 // method - GET // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks // query - {} // body - {}
+http: 06-10-2020 10:36:33 // method - GET // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks // query - {} // body - {}
+http: 06-10-2020 10:36:33 // method - POST // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:36:33 // method - POST // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:36:33 // method - PUT // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks/5f9288019c822230c92f5f0b // query - {} // body - {"id":"5f9288019c822230c92f5f0b","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f9288009c822230c92f5f06","columnId":null}
+error: 06-10-2020 10:36:33 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 06-10-2020 10:36:38 // method - GET // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks/5f9288019c822230c92f5f09 // query - {} // body - {}
+http: 06-10-2020 10:36:38 // method - DELETE // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks/5f9288019c822230c92f5f09 // query - {} // body - {}
+http: 06-10-2020 10:36:38 // method - GET // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks/5f9288019c822230c92f5f09 // query - {} // body - {}
+error: 06-10-2020 10:36:38 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9288009c822230c92f5f06/tasks/5f9288019c822230c92f5f09 // query - {} // body - {}
+http: 06-10-2020 10:36:38 // method - DELETE // url - http://localhost:4000/boards/5f9288009c822230c92f5f06 // query - {} // body - {}
+http: 06-10-2020 10:40:45 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:40:45 // method - POST // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:40:45 // method - GET // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks // query - {} // body - {}
+http: 06-10-2020 10:40:46 // method - GET // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks // query - {} // body - {}
+http: 06-10-2020 10:40:46 // method - GET // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288fdda7d7f320f70277b // query - {} // body - {}
+http: 06-10-2020 10:40:46 // method - POST // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:40:46 // method - POST // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:40:46 // method - PUT // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288feda7d7f320f70277d // query - {} // body - {"id":"5f9288feda7d7f320f70277d","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f9288fdda7d7f320f702778","columnId":null}
+error: 06-10-2020 10:40:46 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 06-10-2020 10:40:51 // method - GET // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288fdda7d7f320f70277b // query - {} // body - {}
+http: 06-10-2020 10:40:51 // method - DELETE // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288fdda7d7f320f70277b // query - {} // body - {}
+http: 06-10-2020 10:40:51 // method - GET // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288fdda7d7f320f70277b // query - {} // body - {}
+error: 06-10-2020 10:40:51 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778/tasks/5f9288fdda7d7f320f70277b // query - {} // body - {}
+http: 06-10-2020 10:40:51 // method - DELETE // url - http://localhost:4000/boards/5f9288fdda7d7f320f702778 // query - {} // body - {}
+http: 06-10-2020 10:43:18 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:18 // method - POST // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:43:18 // method - GET // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks // query - {} // body - {}
+http: 06-10-2020 10:43:18 // method - GET // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks // query - {} // body - {}
+http: 06-10-2020 10:43:18 // method - GET // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2164 // query - {} // body - {}
+http: 06-10-2020 10:43:18 // method - POST // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:43:18 // method - POST // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 06-10-2020 10:43:18 // method - PUT // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2166 // query - {} // body - {"id":"5f9289968778463266ba2166","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f9289968778463266ba2161","columnId":null}
+error: 06-10-2020 10:43:19 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 06-10-2020 10:43:23 // method - GET // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2164 // query - {} // body - {}
+http: 06-10-2020 10:43:23 // method - DELETE // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2164 // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2164 // query - {} // body - {}
+error: 06-10-2020 10:43:24 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9289968778463266ba2161/tasks/5f9289968778463266ba2164 // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - DELETE // url - http://localhost:4000/boards/5f9289968778463266ba2161 // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards/5f9289368778463266ba215d // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:24 // method - DELETE // url - http://localhost:4000/boards/5f92899c8778463266ba216b // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:24 // method - PUT // url - http://localhost:4000/boards/5f92899c8778463266ba216e // query - {} // body - {"id":"5f92899c8778463266ba216e","title":"Autotest updated board","columns":[{"_id":"5f92899c8778463266ba216f","title":"Backlog","order":1},{"_id":"5f92899c8778463266ba2170","title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba216e // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - DELETE // url - http://localhost:4000/boards/5f92899c8778463266ba216e // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:24 // method - DELETE // url - http://localhost:4000/boards/5f92899c8778463266ba2176 // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2176 // query - {} // body - {}
+error: 06-10-2020 10:43:24 // status - 404 // message - Board not found  // url - http://localhost:4000/boards/5f92899c8778463266ba2176 // query - {} // body - {}
+http: 06-10-2020 10:43:24 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5f92899c8778463266ba2179","userId":null,"columnId":null}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5f92899c8778463266ba2179","userId":null,"columnId":null}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks // query - {} // body - {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5f92899c8778463266ba2179","userId":null,"columnId":null}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks // query - {} // body - {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5f92899c8778463266ba2179","userId":null,"columnId":null}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks // query - {} // body - {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5f92899c8778463266ba2179","userId":null,"columnId":null}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217c // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217d // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217e // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217f // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba2180 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/boards/5f92899c8778463266ba2179 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217c // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217d // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217e // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba217f // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/boards/5f92899c8778463266ba2179/tasks/5f92899d8778463266ba2180 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/boards/5f92899c8778463266ba2168 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/users // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/users/5f92899d8778463266ba2181 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/users/5f92899d8778463266ba2181 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/users/5f92899d8778463266ba2182 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:43:25 // method - PUT // url - http://localhost:4000/users/5f92899d8778463266ba2183 // query - {} // body - {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5f92899d8778463266ba2183"}
+http: 06-10-2020 10:43:25 // method - GET // url - http://localhost:4000/users/5f92899d8778463266ba2183 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/users/5f92899d8778463266ba2183 // query - {} // body - {}
+http: 06-10-2020 10:43:25 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:43:25 // method - DELETE // url - http://localhost:4000/users/5f92899d8778463266ba2185 // query - {} // body - {}
+http: 06-10-2020 10:43:26 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 06-10-2020 10:43:26 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 06-10-2020 10:43:26 // method - POST // url - http://localhost:4000/boards/5f92899e8778463266ba2187/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5f92899e8778463266ba2186","boardId":"5f92899e8778463266ba2187"}
+http: 06-10-2020 10:43:26 // method - POST // url - http://localhost:4000/boards/5f92899e8778463266ba2187/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5f92899e8778463266ba2186","boardId":"5f92899e8778463266ba2187"}
+http: 06-10-2020 10:43:26 // method - DELETE // url - http://localhost:4000/users/5f92899e8778463266ba2186 // query - {} // body - {}
+http: 06-10-2020 10:43:26 // method - GET // url - http://localhost:4000/boards/5f92899e8778463266ba2187/tasks/5f92899e8778463266ba218a // query - {} // body - {}
+http: 07-10-2020 22:15:50 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:15:50 // method - POST // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:15:50 // method - GET // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks // query - {} // body - {}
+http: 07-10-2020 22:15:50 // method - GET // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks // query - {} // body - {}
+http: 07-10-2020 22:15:50 // method - GET // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687f8 // query - {} // body - {}
+http: 07-10-2020 22:15:50 // method - POST // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:15:50 // method - POST // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:15:50 // method - PUT // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687fa // query - {} // body - {"id":"5f947d660255be19e91687fa","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f947d660255be19e91687f5","columnId":null}
+error: 07-10-2020 22:15:50 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:15:55 // method - GET // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687f8 // query - {} // body - {}
+http: 07-10-2020 22:15:55 // method - DELETE // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687f8 // query - {} // body - {}
+http: 07-10-2020 22:15:55 // method - GET // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687f8 // query - {} // body - {}
+error: 07-10-2020 22:15:55 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f947d660255be19e91687f5/tasks/5f947d660255be19e91687f8 // query - {} // body - {}
+http: 07-10-2020 22:15:55 // method - DELETE // url - http://localhost:4000/boards/5f947d660255be19e91687f5 // query - {} // body - {}
+http: 07-10-2020 22:24:30 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:24:30 // method - POST // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:24:30 // method - GET // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks // query - {} // body - {}
+http: 07-10-2020 22:24:31 // method - GET // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks // query - {} // body - {}
+http: 07-10-2020 22:24:31 // method - GET // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6eb4e6e71def08cdab // query - {} // body - {}
+http: 07-10-2020 22:24:31 // method - POST // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:24:31 // method - POST // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:24:31 // method - PUT // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6fb4e6e71def08cdad // query - {} // body - {"id":"5f947f6fb4e6e71def08cdad","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f947f6eb4e6e71def08cda8","columnId":null}
+error: 07-10-2020 22:24:31 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:24:36 // method - GET // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6eb4e6e71def08cdab // query - {} // body - {}
+http: 07-10-2020 22:24:36 // method - DELETE // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6eb4e6e71def08cdab // query - {} // body - {}
+http: 07-10-2020 22:24:36 // method - GET // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6eb4e6e71def08cdab // query - {} // body - {}
+error: 07-10-2020 22:24:36 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8/tasks/5f947f6eb4e6e71def08cdab // query - {} // body - {}
+http: 07-10-2020 22:24:36 // method - DELETE // url - http://localhost:4000/boards/5f947f6eb4e6e71def08cda8 // query - {} // body - {}
+http: 07-10-2020 22:25:58 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:25:58 // method - POST // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:25:58 // method - GET // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks // query - {} // body - {}
+http: 07-10-2020 22:25:58 // method - GET // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks // query - {} // body - {}
+http: 07-10-2020 22:25:58 // method - GET // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd5 // query - {} // body - {}
+http: 07-10-2020 22:25:58 // method - POST // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:25:58 // method - POST // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:25:58 // method - PUT // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd7 // query - {} // body - {"id":"5f947fc6df21e61e41071bd7","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f947fc6df21e61e41071bd2","columnId":null}
+error: 07-10-2020 22:25:58 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:26:03 // method - GET // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd5 // query - {} // body - {}
+http: 07-10-2020 22:26:03 // method - DELETE // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd5 // query - {} // body - {}
+http: 07-10-2020 22:26:03 // method - GET // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd5 // query - {} // body - {}
+error: 07-10-2020 22:26:03 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2/tasks/5f947fc6df21e61e41071bd5 // query - {} // body - {}
+http: 07-10-2020 22:26:03 // method - DELETE // url - http://localhost:4000/boards/5f947fc6df21e61e41071bd2 // query - {} // body - {}
+http: 07-10-2020 22:26:17 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:26:17 // method - POST // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:26:17 // method - GET // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks // query - {} // body - {}
+http: 07-10-2020 22:26:17 // method - GET // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks // query - {} // body - {}
+http: 07-10-2020 22:26:17 // method - POST // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:26:17 // method - POST // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:26:17 // method - PUT // url - http://localhost:4000/boards/undefined/tasks/undefined // query - {} // body - {"title":"Autotest updated task"}
+error: 07-10-2020 22:26:17 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"
+http: 07-10-2020 22:26:22 // method - GET // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks/undefined // query - {} // body - {}
+error: 07-10-2020 22:26:22 // status - CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Task" // message - Cast to ObjectId failed for value "undefined" at path "_id" for model "Task"  // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387/tasks/undefined // query - {} // body - {}
+http: 07-10-2020 22:26:22 // method - DELETE // url - http://localhost:4000/boards/5f947fd9e5605c1e88cba387 // query - {} // body - {}
+http: 07-10-2020 22:28:09 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:28:09 // method - POST // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:09 // method - GET // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks // query - {} // body - {}
+http: 07-10-2020 22:28:09 // method - GET // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks // query - {} // body - {}
+http: 07-10-2020 22:28:10 // method - GET // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f948049f473d61f580b43bc // query - {} // body - {}
+http: 07-10-2020 22:28:10 // method - POST // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:10 // method - DELETE // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f94804af473d61f580b43bd // query - {} // body - {}
+http: 07-10-2020 22:28:10 // method - POST // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:10 // method - PUT // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f94804af473d61f580b43be // query - {} // body - {"id":"5f94804af473d61f580b43be","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f948049f473d61f580b43b9","columnId":null}
+error: 07-10-2020 22:28:10 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:28:15 // method - GET // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f948049f473d61f580b43bc // query - {} // body - {}
+http: 07-10-2020 22:28:15 // method - DELETE // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f948049f473d61f580b43bc // query - {} // body - {}
+http: 07-10-2020 22:28:15 // method - GET // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f948049f473d61f580b43bc // query - {} // body - {}
+error: 07-10-2020 22:28:15 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f948049f473d61f580b43b9/tasks/5f948049f473d61f580b43bc // query - {} // body - {}
+http: 07-10-2020 22:28:15 // method - DELETE // url - http://localhost:4000/boards/5f948049f473d61f580b43b9 // query - {} // body - {}
+http: 07-10-2020 22:28:35 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:28:35 // method - POST // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:35 // method - GET // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks // query - {} // body - {}
+http: 07-10-2020 22:28:35 // method - GET // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks // query - {} // body - {}
+http: 07-10-2020 22:28:35 // method - GET // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09397 // query - {} // body - {}
+http: 07-10-2020 22:28:35 // method - POST // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:35 // method - POST // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:28:35 // method - PUT // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09399 // query - {} // body - {"id":"5f9480633707971fa1a09399","title":"Autotest updated task","order":"0","description":"Lorem ipsum","userId":null,"boardId":"5f9480633707971fa1a09394","columnId":null}
+error: 07-10-2020 22:28:35 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:28:40 // method - GET // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09397 // query - {} // body - {}
+http: 07-10-2020 22:28:40 // method - DELETE // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09397 // query - {} // body - {}
+http: 07-10-2020 22:28:40 // method - GET // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09397 // query - {} // body - {}
+error: 07-10-2020 22:28:40 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9480633707971fa1a09394/tasks/5f9480633707971fa1a09397 // query - {} // body - {}
+http: 07-10-2020 22:28:40 // method - DELETE // url - http://localhost:4000/boards/5f9480633707971fa1a09394 // query - {} // body - {}
+http: 07-10-2020 22:29:51 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:29:51 // method - POST // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:29:51 // method - GET // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks // query - {} // body - {}
+http: 07-10-2020 22:29:51 // method - GET // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks // query - {} // body - {}
+http: 07-10-2020 22:29:51 // method - GET // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480afc2bf861fee15bbfc // query - {} // body - {}
+http: 07-10-2020 22:29:52 // method - POST // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:29:52 // method - DELETE // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480b0c2bf861fee15bbfd // query - {} // body - {}
+http: 07-10-2020 22:29:52 // method - POST // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:29:52 // method - PUT // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480b0c2bf861fee15bbfe // query - {} // body - {"id":"5f9480b0c2bf861fee15bbfe","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f9480afc2bf861fee15bbf9","columnId":null}
+error: 07-10-2020 22:29:52 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:29:57 // method - GET // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480afc2bf861fee15bbfc // query - {} // body - {}
+http: 07-10-2020 22:29:57 // method - DELETE // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480afc2bf861fee15bbfc // query - {} // body - {}
+http: 07-10-2020 22:29:57 // method - GET // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480afc2bf861fee15bbfc // query - {} // body - {}
+error: 07-10-2020 22:29:57 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9/tasks/5f9480afc2bf861fee15bbfc // query - {} // body - {}
+http: 07-10-2020 22:29:57 // method - DELETE // url - http://localhost:4000/boards/5f9480afc2bf861fee15bbf9 // query - {} // body - {}
+http: 07-10-2020 22:30:34 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:30:34 // method - POST // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:30:34 // method - GET // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks // query - {} // body - {}
+http: 07-10-2020 22:30:34 // method - GET // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks // query - {} // body - {}
+http: 07-10-2020 22:30:34 // method - GET // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f98 // query - {} // body - {}
+http: 07-10-2020 22:30:34 // method - POST // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:30:35 // method - DELETE // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f99 // query - {} // body - {}
+http: 07-10-2020 22:30:35 // method - POST // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:30:35 // method - PUT // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480db1222032052b43f9a // query - {} // body - {"id":"5f9480db1222032052b43f9a","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f9480da1222032052b43f95","columnId":null}
+error: 07-10-2020 22:30:35 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:30:40 // method - GET // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f98 // query - {} // body - {}
+http: 07-10-2020 22:30:40 // method - DELETE // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f98 // query - {} // body - {}
+http: 07-10-2020 22:30:40 // method - GET // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f98 // query - {} // body - {}
+error: 07-10-2020 22:30:40 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9480da1222032052b43f95/tasks/5f9480da1222032052b43f98 // query - {} // body - {}
+http: 07-10-2020 22:30:40 // method - DELETE // url - http://localhost:4000/boards/5f9480da1222032052b43f95 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:36:34 // method - POST // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d3 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - POST // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:34 // method - DELETE // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d4 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - POST // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:34 // method - PUT // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d5 // query - {} // body - {"id":"5f948242fdcaaf24544a27d5","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f948242fdcaaf24544a27d0","columnId":null}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d5 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d3 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - DELETE // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d3 // query - {} // body - {}
+http: 07-10-2020 22:36:34 // method - GET // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d3 // query - {} // body - {}
+error: 07-10-2020 22:36:35 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0/tasks/5f948242fdcaaf24544a27d3 // query - {} // body - {}
+http: 07-10-2020 22:36:35 // method - DELETE // url - http://localhost:4000/boards/5f948242fdcaaf24544a27d0 // query - {} // body - {}
+http: 07-10-2020 22:36:47 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:36:47 // method - POST // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:47 // method - GET // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks // query - {} // body - {}
+http: 07-10-2020 22:36:47 // method - GET // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks // query - {} // body - {}
+http: 07-10-2020 22:36:47 // method - GET // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e4 // query - {} // body - {}
+http: 07-10-2020 22:36:47 // method - POST // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:47 // method - DELETE // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e5 // query - {} // body - {}
+http: 07-10-2020 22:36:48 // method - POST // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:36:48 // method - PUT // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f948250366ac724930537e6 // query - {} // body - {"id":"5f948250366ac724930537e6","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f94824f366ac724930537e1","columnId":null}
+error: 07-10-2020 22:36:48 // The error was caught in "unhandledRejection" or "uncaughtException" // message - Performing an update on the path '_id' would modify the immutable field '_id'
+http: 07-10-2020 22:36:53 // method - GET // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e4 // query - {} // body - {}
+http: 07-10-2020 22:36:53 // method - DELETE // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e4 // query - {} // body - {}
+http: 07-10-2020 22:36:53 // method - GET // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e4 // query - {} // body - {}
+error: 07-10-2020 22:36:53 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f94824f366ac724930537e1/tasks/5f94824f366ac724930537e4 // query - {} // body - {}
+http: 07-10-2020 22:36:53 // method - DELETE // url - http://localhost:4000/boards/5f94824f366ac724930537e1 // query - {} // body - {}
+http: 07-10-2020 22:38:00 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:01 // method - POST // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c47 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - POST // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:01 // method - DELETE // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c48 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - POST // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:01 // method - PUT // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c49 // query - {} // body - {"id":"5f9482991322bb25059f7c49","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f9482981322bb25059f7c44","columnId":null}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c49 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c47 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - DELETE // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c47 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - GET // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c47 // query - {} // body - {}
+error: 07-10-2020 22:38:01 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9482981322bb25059f7c44/tasks/5f9482991322bb25059f7c47 // query - {} // body - {}
+http: 07-10-2020 22:38:01 // method - DELETE // url - http://localhost:4000/boards/5f9482981322bb25059f7c44 // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:11 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - GET // url - http://localhost:4000/boards // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - GET // url - http://localhost:4000/boards/5f9482961322bb25059f7c40 // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:11 // method - DELETE // url - http://localhost:4000/boards/5f9482a31322bb25059f7c4e // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:11 // method - PUT // url - http://localhost:4000/boards/5f9482a31322bb25059f7c51 // query - {} // body - {"id":"5f9482a31322bb25059f7c51","title":"Autotest updated board","columns":[{"_id":"5f9482a31322bb25059f7c52","title":"Backlog","order":1},{"_id":"5f9482a31322bb25059f7c53","title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:11 // method - GET // url - http://localhost:4000/boards/5f9482a31322bb25059f7c51 // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - DELETE // url - http://localhost:4000/boards/5f9482a31322bb25059f7c51 // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:11 // method - DELETE // url - http://localhost:4000/boards/5f9482a31322bb25059f7c59 // query - {} // body - {}
+http: 07-10-2020 22:38:11 // method - GET // url - http://localhost:4000/boards/5f9482a31322bb25059f7c59 // query - {} // body - {}
+error: 07-10-2020 22:38:11 // status - 404 // message - Board not found  // url - http://localhost:4000/boards/5f9482a31322bb25059f7c59 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5f9482a41322bb25059f7c5c","userId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5f9482a41322bb25059f7c5c","userId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks // query - {} // body - {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5f9482a41322bb25059f7c5c","userId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks // query - {} // body - {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5f9482a41322bb25059f7c5c","userId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks // query - {} // body - {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5f9482a41322bb25059f7c5c","userId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c5f // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c60 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c61 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c62 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c63 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - DELETE // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c5f // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c60 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c61 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c62 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c5c/tasks/5f9482a41322bb25059f7c63 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - DELETE // url - http://localhost:4000/boards/5f9482a31322bb25059f7c4b // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c67 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:12 // method - DELETE // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c68 // query - {} // body - {}
+http: 07-10-2020 22:38:12 // method - POST // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:38:13 // method - PUT // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c69 // query - {} // body - {"id":"5f9482a41322bb25059f7c69","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f9482a41322bb25059f7c64","columnId":null}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c69 // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c67 // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - DELETE // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c67 // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c67 // query - {} // body - {}
+error: 07-10-2020 22:38:13 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64/tasks/5f9482a41322bb25059f7c67 // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - DELETE // url - http://localhost:4000/boards/5f9482a41322bb25059f7c64 // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/users // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/users/5f9482a51322bb25059f7c6b // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - DELETE // url - http://localhost:4000/users/5f9482a51322bb25059f7c6b // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 07-10-2020 22:38:13 // method - DELETE // url - http://localhost:4000/users/5f9482a51322bb25059f7c6c // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 07-10-2020 22:38:13 // method - PUT // url - http://localhost:4000/users/5f9482a51322bb25059f7c6d // query - {} // body - {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5f9482a51322bb25059f7c6d"}
+http: 07-10-2020 22:38:13 // method - GET // url - http://localhost:4000/users/5f9482a51322bb25059f7c6d // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - DELETE // url - http://localhost:4000/users/5f9482a51322bb25059f7c6d // query - {} // body - {}
+http: 07-10-2020 22:38:13 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 07-10-2020 22:38:14 // method - DELETE // url - http://localhost:4000/users/5f9482a51322bb25059f7c6f // query - {} // body - {}
+http: 07-10-2020 22:38:14 // method - POST // url - http://localhost:4000/users // query - {} // body - {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+http: 07-10-2020 22:38:14 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:38:14 // method - POST // url - http://localhost:4000/boards/5f9482a61322bb25059f7c71/tasks // query - {} // body - {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5f9482a61322bb25059f7c70","boardId":"5f9482a61322bb25059f7c71"}
+http: 07-10-2020 22:38:14 // method - POST // url - http://localhost:4000/boards/5f9482a61322bb25059f7c71/tasks // query - {} // body - {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5f9482a61322bb25059f7c70","boardId":"5f9482a61322bb25059f7c71"}
+http: 07-10-2020 22:38:14 // method - DELETE // url - http://localhost:4000/users/5f9482a61322bb25059f7c70 // query - {} // body - {}
+http: 07-10-2020 22:38:14 // method - GET // url - http://localhost:4000/boards/5f9482a61322bb25059f7c71/tasks/5f9482a61322bb25059f7c74 // query - {} // body - {}
+http: 07-10-2020 22:40:10 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:40:11 // method - POST // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec915 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - POST // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:40:11 // method - DELETE // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec916 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - POST // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:40:11 // method - PUT // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec917 // query - {} // body - {"id":"5f94831bb5998625d3aec917","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f94831ab5998625d3aec912","columnId":null}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec917 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec915 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - DELETE // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec915 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - GET // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec915 // query - {} // body - {}
+error: 07-10-2020 22:40:11 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f94831ab5998625d3aec912/tasks/5f94831bb5998625d3aec915 // query - {} // body - {}
+http: 07-10-2020 22:40:11 // method - DELETE // url - http://localhost:4000/boards/5f94831ab5998625d3aec912 // query - {} // body - {}
+http: 07-10-2020 22:41:59 // method - POST // url - http://localhost:4000/boards // query - {} // body - {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+http: 07-10-2020 22:41:59 // method - POST // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:41:59 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks // query - {} // body - {}
+http: 07-10-2020 22:41:59 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks // query - {} // body - {}
+http: 07-10-2020 22:41:59 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc50 // query - {} // body - {}
+http: 07-10-2020 22:41:59 // method - POST // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:41:59 // method - DELETE // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc51 // query - {} // body - {}
+http: 07-10-2020 22:41:59 // method - POST // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks // query - {} // body - {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+http: 07-10-2020 22:41:59 // method - PUT // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc52 // query - {} // body - {"id":"5f9483873434f5264ec5fc52","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f9483873434f5264ec5fc4d","columnId":null}
+http: 07-10-2020 22:42:00 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc52 // query - {} // body - {}
+http: 07-10-2020 22:42:00 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc50 // query - {} // body - {}
+http: 07-10-2020 22:42:00 // method - DELETE // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc50 // query - {} // body - {}
+http: 07-10-2020 22:42:00 // method - GET // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc50 // query - {} // body - {}
+error: 07-10-2020 22:42:00 // status - 404 // message - Task not found  // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d/tasks/5f9483873434f5264ec5fc50 // query - {} // body - {}
+http: 07-10-2020 22:42:00 // method - DELETE // url - http://localhost:4000/boards/5f9483873434f5264ec5fc4d // query - {} // body - {}
