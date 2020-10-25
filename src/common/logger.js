@@ -62,8 +62,8 @@ function createStatisticLog(method, url, query, body) {
   )} // body - ${objectToString(body)}`;
 }
 
-function createErrorLog(error, status, method, url) {
-  return `${formatDate()} // Error - ${error} // status - ${status}  // method - ${method} // url - http://localhost:${PORT}${url}`;
+function createErrorLog(status, message, method, url) {
+  return `${formatDate()} // status - ${status}  // Error - ${message} // method - ${method} // url - http://localhost:${PORT}${url}`;
 }
 
 function createUnhandledEventLog(error) {

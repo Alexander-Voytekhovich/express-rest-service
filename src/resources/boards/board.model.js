@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 const boardSchema = new mongoose.Schema(
   {
     title: String,
-    columns: [
-      { by: mongoose.Schema.Types.ObjectId, title: String, order: Number }
-    ],
-    default: []
+    columns: Array
   },
   { collection: 'boards', versionKey: false }
 );

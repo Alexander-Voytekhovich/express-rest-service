@@ -13,14 +13,15 @@ const create = async task => {
 };
 
 const update = async (boardId, id, task) => {
+  const { title, order, description, userId, columnId } = task;
   return Task.findOneAndUpdate(
     { _id: id, boardId },
     {
-      title: task.title,
-      order: task.order,
-      description: task.description,
-      userId: task.userId,
-      columnId: task.columnId
+      title,
+      order,
+      description,
+      userId,
+      columnId
     }
   );
 };
