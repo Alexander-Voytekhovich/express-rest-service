@@ -6,6 +6,7 @@ const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
+const otherRouter = require('./resources/others/other.router');
 
 const httpLogger = require('./middleware/middleware.http-logger');
 const errorLogger = require('./middleware/middleware.error-logger');
@@ -34,6 +35,7 @@ app.use(httpLogger);
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
+app.use('*', otherRouter);
 
 process.on('unhandledRejection', error => {
   logger.error(createUnhandledEventLog(error));

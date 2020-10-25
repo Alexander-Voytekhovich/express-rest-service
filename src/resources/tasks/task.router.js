@@ -52,10 +52,14 @@ router.route('/:boardId/tasks/:id').put(async (req, res) => {
   res.json(Task.toResponse(task));
 });
 
-router.route('/:boardId/tasks/:id').delete(async (req, res) => {
+router.route('/:boardId/tasks/:id').delete(async (req, res, next) => {
   const { boardId, id } = await req.params;
-  await tasksService.remove(boardId, id);
-  res.sendStatus(204);
+  try {
+    await tasksService.remove(boardId, id);
+    res.status(200).send('Task deleted!');
+  } catch (error) {
+    return next(error);
+  }
 });
 
 module.exports = router;

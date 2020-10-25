@@ -1,24 +1,5 @@
 const Task = require('./task.model');
 
-const taskData = [
-  new Task({
-    title: '13',
-    order: '14',
-    description: '15',
-    userId: '16',
-    boardId: '17',
-    columnId: '17'
-  }),
-  new Task({
-    title: '13',
-    order: '14',
-    description: '15',
-    userId: '16',
-    boardId: '17',
-    columnId: '17'
-  })
-];
-
 const getAll = async boardId => {
   return Task.find({ boardId });
 };
@@ -48,27 +29,20 @@ const remove = async (boardId, id) => {
   return await Task.deleteOne({ boardId, _id: id });
 };
 
-/* const removeAll = async boardId => {
-  tasksData = tasksData.filter(task => task.boardId !== boardId);
-  return tasksData;
+const removeAll = async boardId => {
+  return Task.deleteMany({ boardId });
 };
 
 const resetBoardsId = async userId => {
-  tasksData.forEach(el => {
-    if (el.userId === userId) {
-      el.userId = null;
-    }
-  });
-  return tasksData;
-}; */
+  return Task.updateMany({ userId }, { userId: null });
+};
 
 module.exports = {
   getAll,
   get,
   create,
   remove,
-  // removeAll,
+  removeAll,
   update,
-  // resetBoardsId
-  taskData
+  resetBoardsId
 };

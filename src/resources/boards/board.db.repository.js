@@ -1,7 +1,5 @@
 const Board = require('./board.model');
 
-const boardsData = [new Board({ title: '13' }), new Board({ title: '14' })];
-
 const getAll = async () => {
   return Board.find({});
 };
@@ -23,4 +21,4 @@ const remove = async id => {
   return await Board.deleteOne({ _id: id });
 };
 
-module.exports = { getAll, get, create, remove, update, boardsData };
+module.exports = { getAll, get, create, remove, update };

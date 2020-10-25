@@ -33,10 +33,14 @@ router.route('/:id').put(async (req, res) => {
   res.json(Board.toResponse(board));
 });
 
-router.route('/:id').delete(async (req, res) => {
+router.route('/:id').delete(async (req, res, next) => {
   const { id } = req.params;
-  await boardsService.remove(id);
-  res.sendStatus(200);
+  try {
+    await boardsService.remove(id);
+    res.status(200).send('Board deleted!');
+  } catch (error) {
+    return next(error);
+  }
 });
 
 module.exports = router;
