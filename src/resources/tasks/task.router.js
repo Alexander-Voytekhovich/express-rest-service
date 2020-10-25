@@ -7,7 +7,7 @@ router.route('/:boardId/tasks').get(async (req, res) => {
   const { boardId } = await req.params;
   const tasks = await tasksService.getAll(boardId);
   if (tasks) {
-    return res.status(200).send(tasks);
+    return res.status(200).send(tasks.map(Task.toResponse));
   }
   return res.status(404).send('Tasks not found');
 });
@@ -17,7 +17,7 @@ router.route('/:boardId/tasks/:id').get(async (req, res, next) => {
   try {
     const task = await tasksService.get(boardId, id);
     if (!task) throw new errorGenerator.NotFound('Task not found');
-    return res.status(200).send(task);
+    return res.status(200).send(Task.toResponse(task));
   } catch (err) {
     return next(err);
   }
@@ -34,29 +34,32 @@ router.route('/:boardId/tasks').post(async (req, res) => {
     boardId,
     columnId
   });
-  tasksService.create(task);
-  res.json(task);
+  await tasksService.create(task);
+  res.json(Task.toResponse(task));
 });
 
 router.route('/:boardId/tasks/:id').put(async (req, res) => {
-  const { title, order, description, columnId } = req.body;
+  const { title, order, description, userId, columnId } = req.body;
   const { boardId, id } = req.params;
   const task = await new Task({
     title,
     order,
     description,
-    userId: id,
-    boardId,
+    userId,
     columnId
   });
   await tasksService.update(boardId, id, task);
-  res.json(task);
+  res.json(Task.toResponse(task));
 });
 
-router.route('/:boardId/tasks/:id').delete(async (req, res) => {
+router.route('/:boardId/tasks/:id').delete(async (req, res, next) => {
   const { boardId, id } = await req.params;
-  await tasksService.remove(boardId, id);
-  res.sendStatus(204);
+  try {
+    await tasksService.remove(boardId, id);
+    res.status(200).send('Task deleted!');
+  } catch (error) {
+    return next(error);
+  }
 });
 
 module.exports = router;
