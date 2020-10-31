@@ -4,9 +4,6 @@ const userService = require('./user.service');
 const usersService = require('./user.service');
 const errorGenerator = require('http-errors');
 
-const { SALT } = require('../..//common/config');
-const bcrypt = require('bcrypt');
-
 router.route('/').get(async (req, res) => {
   const users = await usersService.getAll();
   if (users) {
@@ -27,13 +24,7 @@ router.route('/:id').get(async (req, res, next) => {
 
 router.route('/').post(async (req, res, next) => {
   try {
-    const { name, login, password } = req.body;
-    const cryptedPassword = await bcrypt.hash(password, SALT);
-    const user = await userService.create({
-      name,
-      login,
-      password: cryptedPassword
-    });
+    const user = await userService.create(req.body);
     res.json(User.toResponse(user));
   } catch (error) {
     return next(error);

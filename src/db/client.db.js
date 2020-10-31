@@ -13,7 +13,7 @@ function connectToDB(fn) {
   db.on('error', console.error.bind(console, 'connection error:'));
   db.once('open', () => {
     console.log('DB connected!');
-    db.dropDatabase();
+    // db.dropDatabase();
     fn();
   });
 }

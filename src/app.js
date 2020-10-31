@@ -8,6 +8,8 @@ const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
 const otherRouter = require('./resources/others/other.router');
 
+// const { authentication } = require('./middleware/authentication');
+
 const httpLogger = require('./middleware/middleware.http-logger');
 const errorLogger = require('./middleware/middleware.error-logger');
 
