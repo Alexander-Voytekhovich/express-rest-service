@@ -53,14 +53,4 @@ process.on('uncaughtException', error => {
 
 app.use(errorLogger);
 
-// check "uncaughtException" handler
-/* setTimeout(() => {
-  throw Error('Oops!');
-}, 2000); */
-
-// check "unhandledRejection" handler
-/* setTimeout(() => {
-  Promise.reject(Error('Oops!'));
-}, 2000); */
-
 module.exports = app;
