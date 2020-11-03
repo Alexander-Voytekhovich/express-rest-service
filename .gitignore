@@ -1,1 +1,3 @@
 node_modules
+src/logs/errors.log
+src/logs/http.log
